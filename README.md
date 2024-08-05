@@ -55,6 +55,7 @@ Open your browser and navigate to `http://localhost:3000`
 # Preview
 ![Pokemon](https://github.com/user-attachments/assets/4c840355-2fff-438e-835d-009b41a9e8da)
 
+![Pokemon-Add_user](https://github.com/user-attachments/assets/eac27173-15b9-48b9-98e2-ae0e531ea82e)
 
-
+![Pokemon-Pokemon-list](https://github.com/user-attachments/assets/390c4d4d-762d-400f-83bd-6905f42c146a)
 
