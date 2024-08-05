@@ -61,6 +61,7 @@ table {
   max-width: 800px;
   border-collapse: collapse;
   margin-bottom: 20px;
+  overflow-x: auto;
 }
 
 thead {
@@ -143,6 +144,7 @@ tbody td button:hover {
   background-color: #52c7e3;
 }
 
+/* Media Queries for responsiveness */
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
@@ -156,6 +158,7 @@ tbody td button:hover {
   table {
     width: 100%;
     font-size: 0.9rem;
+    overflow-x: auto;
   }
 
   thead th,
@@ -180,6 +183,7 @@ tbody td button:hover {
   table {
     width: 100%;
     font-size: 0.8rem;
+    overflow-x: auto;
   }
 
   thead th,
