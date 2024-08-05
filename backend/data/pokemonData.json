@@ -40,16 +40,5 @@
     "initialPositionY": "9",
     "speed": "80",
     "direction": "South"
-  },
-  {
-    "id": "1722861784601",
-    "pokemonName": "blastoise",
-    "pokemonAbility": "BigSize",
-    "pokemonOwnerName": "Ayandeep",
-    "initialPositionX": "5",
-    "initialPositionY": "8",
-    "speed": "100",
-    "direction": "North",
-    "noOfPokemon": 1
   }
 ]
