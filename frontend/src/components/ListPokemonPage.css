@@ -180,10 +180,15 @@ tbody td button:hover {
     font-size: 1.5rem;
   }
 
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
+
   table {
     width: 100%;
     font-size: 0.8rem;
-    overflow-x: auto;
+    min-width: 600px; /* Ensures the table can scroll */
   }
 
   thead th,

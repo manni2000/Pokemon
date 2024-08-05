@@ -107,38 +107,40 @@ function ListPokemonPage() {
         <button className="create-list-button" onClick={handleAddPokemon}>Create List</button>
         <button className="delete-all-button" onClick={handleDeleteAll}>Delete All</button>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Pokemon Owner Name</th>
-            <th>Pokemon Name</th>
-            <th>Pokemon Ability</th>
-            <th>No. of Pokemon</th>
-            <th>Add Pokemon</th>
-            <th>Edit</th>
-            <th>Delete</th>
-          </tr>
-        </thead>
-        <tbody>
-          {pokemonList.map((pokemon, index) => (
-            <tr key={index}>
-              <td>{pokemon.pokemonOwnerName}</td>
-              <td>{pokemon.pokemonName}</td>
-              <td>{pokemon.pokemonAbility}</td>
-              <td>{pokemon.noOfPokemon || 1}</td> {}
-              <td>
-                <button onClick={() => handleAddPokemon(pokemon.id)}>+</button>
-              </td>
-              <td>
-                <button onClick={() => handleEdit(pokemon.id)}>Edit</button>
-              </td>
-              <td>
-                <button onClick={() => handleDelete(pokemon.id)}>Delete</button>
-              </td>
+      <div className="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Pokemon Owner Name</th>
+              <th>Pokemon Name</th>
+              <th>Pokemon Ability</th>
+              <th>No. of Pokemon</th>
+              <th>Add Pokemon</th>
+              <th>Edit</th>
+              <th>Delete</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {pokemonList.map((pokemon, index) => (
+              <tr key={index}>
+                <td>{pokemon.pokemonOwnerName}</td>
+                <td>{pokemon.pokemonName}</td>
+                <td>{pokemon.pokemonAbility}</td>
+                <td>{pokemon.noOfPokemon || 1}</td>
+                <td>
+                  <button onClick={() => handleAddPokemon(pokemon.id)}>+</button>
+                </td>
+                <td>
+                  <button onClick={() => handleEdit(pokemon.id)}>Edit</button>
+                </td>
+                <td>
+                  <button onClick={() => handleDelete(pokemon.id)}>Delete</button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
 
       {isModalOpen && (
         <div className="modal">
