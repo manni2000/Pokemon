@@ -60,5 +60,7 @@ Open your browser and navigate to `http://localhost:3000`
 
 ![Pokemon-Add_user](https://github.com/user-attachments/assets/eac27173-15b9-48b9-98e2-ae0e531ea82e)
 
-![Pokemon-Pokemon-list](https://github.com/user-attachments/assets/390c4d4d-762d-400f-83bd-6905f42c146a)
+![Pokemonlist](https://github.com/user-attachments/assets/c60a47b6-7242-4be6-bac0-38d41e6b6b55)
+
+
 
