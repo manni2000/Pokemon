@@ -18,6 +18,13 @@
   text-align: center;
 }
 
+.success-message {
+  color: #4caf50;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+
 .pokemon-form {
   display: flex;
   flex-direction: column;

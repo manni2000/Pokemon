@@ -1,4 +1,14 @@
 /* HomePage specific styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .home-page {
   display: flex;
   flex-direction: column;
@@ -8,10 +18,9 @@
   background-color: #1e1e1e;
   color: #ffffff;
   padding: 20px;
-  box-sizing: border-box;
 }
 
-h1{
+h1 {
   color: #8ee7fe;
 }
 
@@ -21,11 +30,13 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .left-header {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -44,6 +55,7 @@ header {
   padding: 10px;
   border-radius: 5px;
   border: none;
+  flex-shrink: 0;
 }
 
 .right-header .nav-button {
@@ -94,6 +106,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .pagination button {
@@ -113,4 +126,62 @@ header {
 
 .pagination span {
   color: #61dafb;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  header, .left-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pokemon-select {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .right-header .nav-button {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .pokemon-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .pokemon-card img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  header, .left-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pokemon-select {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .right-header .nav-button {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .pokemon-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  .pokemon-card img {
+    width: 60px;
+    height: 60px;
+  }
 }

@@ -29,5 +29,27 @@
     "initialPositionY": "8",
     "speed": "70",
     "direction": "West"
+  },
+  {
+    "id": "1722853620741",
+    "pokemonOwnerName": "Arthak ",
+    "pokemonName": "Pikachu",
+    "pokemonAbility": "Thunder-light",
+    "noOfPokemon": 1,
+    "initialPositionX": "7",
+    "initialPositionY": "9",
+    "speed": "80",
+    "direction": "South"
+  },
+  {
+    "id": "1722861784601",
+    "pokemonName": "blastoise",
+    "pokemonAbility": "BigSize",
+    "pokemonOwnerName": "Ayandeep",
+    "initialPositionX": "5",
+    "initialPositionY": "8",
+    "speed": "100",
+    "direction": "North",
+    "noOfPokemon": 1
   }
 ]
