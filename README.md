@@ -53,6 +53,8 @@ npm start
 Open your browser and navigate to `http://localhost:3000`
 
 # Preview
+![Pokemon](https://github.com/user-attachments/assets/4c840355-2fff-438e-835d-009b41a9e8da)
+
 
 
 
