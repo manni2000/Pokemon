@@ -1,0 +1,33 @@
+[
+  {
+    "id": "1722842285165",
+    "pokemonName": "caterpie",
+    "pokemonAbility": "speed",
+    "pokemonOwnerName": "Manish",
+    "initialPositionX": "3",
+    "initialPositionY": "8",
+    "speed": "40",
+    "direction": "North",
+    "noOfPokemon": 1
+  },
+  {
+    "id": "1722842312506",
+    "pokemonName": "venusaur",
+    "pokemonAbility": "shed-skin",
+    "pokemonOwnerName": "Gurusha",
+    "initialPositionX": "6",
+    "initialPositionY": "9",
+    "speed": "60",
+    "direction": "South"
+  },
+  {
+    "id": "1722842331105",
+    "pokemonName": "squirtle",
+    "pokemonAbility": "rain-dish",
+    "pokemonOwnerName": "Piyush",
+    "initialPositionX": "6",
+    "initialPositionY": "8",
+    "speed": "70",
+    "direction": "West"
+  }
+]

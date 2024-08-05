@@ -1,0 +1,135 @@
+/* AddPokemonPage specific styles */
+.add-pokemon-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.add-pokemon-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #61dafb;
+  text-align: center;
+}
+
+.pokemon-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2e2e2e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  width: 100%;
+}
+
+.pokemon-form input,
+.pokemon-form select {
+  width: calc(100% - 20px);
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.pokemon-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #61dafb;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pokemon-form button:hover {
+  background-color: #52c7e3;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.button-group .home-button,
+.button-group .pokemon-list-button {
+  flex: 1;
+  padding: 10px 20px;
+  background-color: #61dafb;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.button-group .home-button:hover,
+.button-group .pokemon-list-button:hover {
+  background-color: #52c7e3;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: -10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .pokemon-form {
+    padding: 15px;
+  }
+
+  .pokemon-form input,
+  .pokemon-form select {
+    width: calc(100% - 20px);
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group .home-button,
+  .button-group .pokemon-list-button {
+    margin: 5px 0;
+    width: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .add-pokemon-page h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .pokemon-form {
+    padding: 10px;
+  }
+
+  .pokemon-form input,
+  .pokemon-form select {
+    width: calc(100% - 20px);
+    font-size: 0.9rem;
+  }
+
+  .pokemon-form button,
+  .button-group .home-button,
+  .button-group .pokemon-list-button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}

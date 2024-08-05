@@ -1,0 +1,170 @@
+/* ListPokemonPage specific styles */
+.list-pokemon-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #61dafb;
+}
+
+.table-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.table-actions .home-button,
+.table-actions .create-list-button,
+.table-actions .delete-all-button {
+  padding: 10px 20px;
+  background-color: #61dafb;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.table-actions .home-button:hover,
+.table-actions .create-list-button:hover,
+.table-actions .delete-all-button:hover {
+  background-color: #52c7e3;
+}
+
+table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+thead {
+  background-color: #3e3e3e;
+}
+
+thead th {
+  padding: 10px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #3e3e3e;
+}
+
+tbody td {
+  padding: 10px;
+}
+
+tbody td button {
+  padding: 5px 10px;
+  background-color: #61dafb;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+tbody td button:hover {
+  background-color: #52c7e3;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #2e2e2e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 100%;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #61dafb;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content form input,
+.modal-content form button {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.modal-content form button {
+  background-color: #61dafb;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal-content form button:hover {
+  background-color: #52c7e3;
+}
+
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  thead th,
+  tbody td {
+    padding: 8px;
+  }
+
+  tbody td button {
+    padding: 5px;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  table {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  thead th,
+  tbody td {
+    padding: 6px;
+  }
+
+  tbody td button {
+    padding: 4px;
+  }
+
+  .modal-content {
+    width: 100%;
+  }
+}

@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2e2e2e;
+  border-bottom: 1px solid #3e3e3e;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.home-page {
+  padding: 20px;
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.pokemon-card {
+  background-color: #2e2e2e;
+  border: 1px solid #3e3e3e;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-10px);
+}
+
+.pokemon-card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  background-color: #61dafb;
+  border: none;
+  color: #000;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.pagination button:disabled {
+  background-color: #3e3e3e;
+  color: #7e7e7e;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #52c7e3;
+}
+
+.pagination span {
+  margin: 0 10px;
+  font-size: 1.1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  .pokemon-card {
+    width: 100%;
+  }
+
+  .pagination {
+    flex-direction: column;
+  }
+
+  .pagination button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  .pokemon-card {
+    padding: 15px;
+  }
+
+  .pokemon-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .pagination span {
+    font-size: 1rem;
+  }
+}
