@@ -1,4 +1,4 @@
-/* HomePage specific styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -128,7 +128,6 @@ header {
   color: #61dafb;
 }
 
-/* Media Queries for responsiveness */
 @media (max-width: 768px) {
   header, .left-header {
     flex-direction: column;

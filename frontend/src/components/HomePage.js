@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './HomePage.css';  // Import HomePage specific styles
-import pokemonIcon from '../photo/pokemonIcon.png'; // Import the logo image
+import './HomePage.css';  
+import pokemonIcon from '../photo/pokemonIcon.png'; 
 
 function HomePage() {
   const [pokemonList, setPokemonList] = useState([]);
@@ -50,7 +50,7 @@ function HomePage() {
             <p>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</p>
           </Link>
         ))}
-        {/* Add empty cards to fill the remaining space */}
+        {}
         {[...Array(20 - pokemonList.length)].map((_, index) => (
           <div key={index} className="pokemon-card empty-card"></div>
         ))}

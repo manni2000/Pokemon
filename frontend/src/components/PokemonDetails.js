@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import './PokemonDetails.css';  // Import PokemonDetails specific styles
+import './PokemonDetails.css';  
 
 function PokemonDetails() {
   const { id } = useParams();
@@ -13,10 +13,10 @@ function PokemonDetails() {
         const details = {
           pokemonName: response.data.name,
           imageUrl: response.data.sprites.front_default,
-          initialPositionX: 50, // Rough data
-          initialPositionY: 100, // Rough data
+          initialPositionX: 50, 
+          initialPositionY: 100, 
           speed: response.data.stats.find(stat => stat.stat.name === 'speed').base_stat,
-          direction: "North" // Rough data
+          direction: "North" 
         };
         setPokemonDetails(details);
       })

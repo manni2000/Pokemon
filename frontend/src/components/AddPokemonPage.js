@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import './AddPokemonPage.css';  // Import AddPokemonPage specific styles
+import './AddPokemonPage.css';  
 
 function AddPokemonPage() {
   const [pokemonName, setPokemonName] = useState('');
@@ -63,7 +63,7 @@ function AddPokemonPage() {
     axios.post('http://localhost:5000/api/pokemon', newPokemon)
       .then(response => {
         console.log(response.data);
-        // Reset form fields
+       
         setPokemonName('');
         setPokemonAbility('');
         setPokemonOwnerName('');

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './ListPokemonPage.css';  // Import ListPokemonPage specific styles
+import './ListPokemonPage.css';  
 
 function ListPokemonPage() {
   const [pokemonList, setPokemonList] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalType, setModalType] = useState(''); // 'add' or 'edit'
+  const [modalType, setModalType] = useState(''); 
   const [currentPokemon, setCurrentPokemon] = useState(null);
   const [formData, setFormData] = useState({
     pokemonOwnerName: '',
@@ -60,7 +60,7 @@ function ListPokemonPage() {
       pokemonOwnerName: pokemonToEdit.pokemonOwnerName,
       pokemonName: pokemonToEdit.pokemonName,
       pokemonAbility: pokemonToEdit.pokemonAbility,
-      noOfPokemon: pokemonToEdit.noOfPokemon || 1, // Default to 1 if no value
+      noOfPokemon: pokemonToEdit.noOfPokemon || 1, 
       initialPositionX: pokemonToEdit.initialPositionX,
       initialPositionY: pokemonToEdit.initialPositionY,
       speed: pokemonToEdit.speed,
@@ -125,7 +125,7 @@ function ListPokemonPage() {
               <td>{pokemon.pokemonOwnerName}</td>
               <td>{pokemon.pokemonName}</td>
               <td>{pokemon.pokemonAbility}</td>
-              <td>{pokemon.noOfPokemon || 1}</td> {/* Default to 1 if no value */}
+              <td>{pokemon.noOfPokemon || 1}</td> {}
               <td>
                 <button onClick={() => handleAddPokemon(pokemon.id)}>+</button>
               </td>

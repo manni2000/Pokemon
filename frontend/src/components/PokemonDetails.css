@@ -1,4 +1,4 @@
-/* PokemonDetails specific styles */
+
 .pokemon-details-page {
     display: flex;
     flex-direction: column;
@@ -69,7 +69,6 @@
     background-color: #52c7e3;
   }
   
-  /* Responsive Styles */
   @media (max-width: 768px) {
     .pokemon-details-container {
       padding: 15px;
