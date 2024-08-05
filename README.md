@@ -12,7 +12,7 @@
 <b>1. Clone the Repository:</b><br>
 <pre>
 git clone https://github.com/manni2000/Pokemon.git
-cd Movie_Explore
+cd Pokemon
 </pre>
 
 <b>2. Install Dependencies:</b>   
