@@ -60,7 +60,7 @@ function AddPokemonPage() {
       speed,
       direction
     };
-    axios.post('https://pokemon-rosy-chi.vercel.app/api/pokemon', newPokemon)
+    axios.post('https://pokemon-backend-ten.vercel.app/api/pokemon', newPokemon)
       .then(response => {
         console.log(response.data);
        
