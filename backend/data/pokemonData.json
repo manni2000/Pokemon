@@ -40,5 +40,26 @@
     "initialPositionY": "9",
     "speed": "80",
     "direction": "South"
+  },
+  {
+    "id": "1722883699582",
+    "pokemonName": "charizard",
+    "pokemonAbility": "speed",
+    "pokemonOwnerName": "Tanmay",
+    "initialPositionX": "3",
+    "initialPositionY": "8",
+    "speed": "60",
+    "direction": "North",
+    "noOfPokemon": 1
+  },
+  {
+    "id": "1722883801064",
+    "pokemonName": "charmeleon",
+    "pokemonAbility": "",
+    "pokemonOwnerName": "Raj",
+    "initialPositionX": "4",
+    "initialPositionY": "8",
+    "speed": "60",
+    "direction": "West"
   }
 ]

@@ -22,19 +22,19 @@ function ListPokemonPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('https://pokemon-backend-ten.vercel.app/api/pokemon')
+    axios.get('http://localhost:5000/api/pokemon')
       .then(response => setPokemonList(response.data))
       .catch(error => console.error(error));
   }, []);
 
   const handleDelete = (id) => {
-    axios.delete(`https://pokemon-backend-ten.vercel.app/api/pokemon/${id}`)
+    axios.delete(`http://localhost:5000/api/pokemon/${id}`)
       .then(() => setPokemonList(pokemonList.filter(pokemon => pokemon.id !== id)))
       .catch(error => console.error(error));
   };
 
   const handleDeleteAll = () => {
-    axios.delete('https://pokemon-backend-ten.vercel.app/api/pokemon/all')
+    axios.delete('http://localhost:5000/api/pokemon/all')
       .then(() => setPokemonList([]))
       .catch(error => console.error(error));
   };
@@ -73,14 +73,14 @@ function ListPokemonPage() {
 
   const handleModalSubmit = () => {
     if (modalType === 'add') {
-      axios.post('https://pokemon-backend-ten.vercel.app/api/pokemon', formData)
+      axios.post('http://localhost:5000/api/pokemon', formData)
         .then(response => {
           setPokemonList([...pokemonList, response.data]);
           setIsModalOpen(false);
         })
         .catch(error => console.error(error));
     } else if (modalType === 'edit') {
-      axios.put(`https://pokemon-backend-ten.vercel.app/api/pokemon/${currentPokemon.id}`, formData)
+      axios.put(`http://localhost:5000/api/pokemon/${currentPokemon.id}`, formData)
         .then(response => {
           setPokemonList(pokemonList.map(pokemon => 
             pokemon.id === currentPokemon.id ? response.data : pokemon
