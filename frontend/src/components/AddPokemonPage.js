@@ -61,7 +61,7 @@ function AddPokemonPage() {
       direction
     };
 
-    axios.post('https://pokemon-backend-ten.vercel.app/api/pokemon', newPokemon)
+    axios.post('https://pokemon-api-1vjw.onrender.com/api/pokemon', newPokemon)
       .then(response => {
         console.log(response.data);
         setPokemonName('');
