@@ -1,12 +1,33 @@
 # Pokemon-App
-
-    Fullstack Responsive Pokemon Application
+Project Overview:
+The Pokemon Full-Stack Application allows users to interact with a database of Pokémon, performing CRUD (Create, Read, Update, Delete) operations. The application is structured into a frontend and a backend, ensuring a clean separation of concerns and maintainability.<br><br>
 
 # Technologies used:
- Frontend: React, React Router, HTML, CSS and JavaScript </br>
-<br> Backend: NodeJs, ExpressJs, Axios </br>
-<br> Database: Json format </br>
-<br> API: The Pokemon Database (pokeapi) </br>
+
+**Frontend:**
+- **React**: A JavaScript library for building user interfaces. It allows for the creation of reusable UI components.
+- **React Router**: A standard library for routing in React. It enables navigation among different views of various components in a React application.
+- **HTML/CSS**: Standard web technologies used for structuring and styling the web pages.
+- **JavaScript**: The programming language used for client-side logic.
+
+**Backend:**
+- **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine, used for server-side scripting.
+- **Express.js**: A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+- **Axios**: A promise-based HTTP client for the browser and Node.js used to make HTTP requests from the frontend to the backend.
+- **Json-Server**: Used as a simple JSON file-based database to mock a RESTful API.
+
+**Database:**
+- The database is in JSON format, which is managed using Json-Server for ease of development and demonstration purposes.
+
+**API:**
+- The application utilizes the Pokémon Database API (pokeapi) to fetch Pokémon data.
+
+# Functionalities
+- **List Pokémon**: The main page displays a list of all Pokémon users in the database. Each entry shows the Pokémon owner's name, Pokémon name, and ability.
+- **Add Pokémon**: A form allows users to add new Pokémon to the database by entering the necessary details like owner name, Pokémon name, ability, initial position, speed, and direction.
+- **Edit Pokémon**: Users can update the details of existing Pokémon entries.
+- **Delete Pokémon**: Users can delete individual Pokémon entries or clear the entire list.
+
 
 # Steps to Run the Project
 <b>1. Clone the Repository:</b><br>
