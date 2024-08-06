@@ -8,8 +8,9 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-  origin: '*' // Ensure this matches your frontend URL
+  origin: '*' 
 }));
+
 app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, '../frontend/build')));
