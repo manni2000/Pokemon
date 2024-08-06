@@ -53,14 +53,11 @@ npm start
 Open your browser and navigate to `http://localhost:3000`
 
 # Preview
+![Pokemon](https://github.com/user-attachments/assets/32510099-412e-4174-83dd-be48cf0957b0)
 
-![Pokemon](https://github.com/user-attachments/assets/4c840355-2fff-438e-835d-009b41a9e8da)
+![pokemondetails](https://github.com/user-attachments/assets/45bd609d-331d-486d-8c0c-932000b87905)
 
-![pokemondetails](https://github.com/user-attachments/assets/16f6a7ac-1583-46cb-9d60-89af37ea1feb)
+![Pokemon-Add_user](https://github.com/user-attachments/assets/0b62a293-d303-45ec-990c-42d3a9c554b7)
 
-![Pokemon-Add_user](https://github.com/user-attachments/assets/eac27173-15b9-48b9-98e2-ae0e531ea82e)
-
-![Pokemonlist](https://github.com/user-attachments/assets/c60a47b6-7242-4be6-bac0-38d41e6b6b55)
-
-
+![Pokemon-list](https://github.com/user-attachments/assets/afad82eb-af25-41c7-8855-ebdb2b2386a0)
 
