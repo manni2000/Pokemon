@@ -52,6 +52,9 @@ npm start
 <b>4. Access the Application:</b>
 Open your browser and navigate to `http://localhost:3000`
 
+<b>5. Deploy at Render cloud hositing website: </b>
+https://pokemon-h9ur.onrender.com/
+
 # Preview
 ![Pokemon](https://github.com/user-attachments/assets/32510099-412e-4174-83dd-be48cf0957b0)
 
