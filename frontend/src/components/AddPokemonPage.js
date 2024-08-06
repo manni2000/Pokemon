@@ -60,7 +60,7 @@ function AddPokemonPage() {
       speed,
       direction
     };
-    axios.post('http://localhost:5000/api/pokemon', newPokemon)
+    axios.post('https://pokemon-backend-ten.vercel.app/api/pokemon', newPokemon)
       .then(response => {
         console.log(response.data);
        
@@ -152,3 +152,4 @@ function AddPokemonPage() {
 }
 
 export default AddPokemonPage;
+
