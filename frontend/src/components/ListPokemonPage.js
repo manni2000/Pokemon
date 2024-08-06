@@ -28,10 +28,21 @@ function ListPokemonPage() {
   }, []);
 
   const handleDelete = (id) => {
+    if (!id) {
+      console.error('Invalid ID');
+      return;
+    }
+  
     axios.delete(`https://pokemon-backend-ten.vercel.app/api/pokemon/${id}`)
-      .then(() => setPokemonList(pokemonList.filter(pokemon => pokemon.id !== id)))
-      .catch(error => console.error(error));
+      .then(() => {
+        setPokemonList(prevList => prevList.filter(pokemon => pokemon.id !== id));
+      })
+      .catch(error => {
+        console.error('There was an error deleting the Pokémon:', error.response ? error.response.data : error.message);
+        alert('Error: ' + (error.response ? error.response.data.message : error.message));
+      });
   };
+  
 
   const handleDeleteAll = () => {
     axios.delete('https://pokemon-backend-ten.vercel.app/api/pokemon/all')

@@ -60,10 +60,10 @@ function AddPokemonPage() {
       speed,
       direction
     };
+
     axios.post('https://pokemon-backend-ten.vercel.app/api/pokemon', newPokemon)
       .then(response => {
         console.log(response.data);
-       
         setPokemonName('');
         setPokemonAbility('');
         setPokemonOwnerName('');
@@ -75,7 +75,10 @@ function AddPokemonPage() {
         setSuccessMessage('Pokemon is added!');
         setTimeout(() => setSuccessMessage(''), 3000);
       })
-      .catch(error => console.error(error));
+      .catch(error => {
+        console.error('There was an error!', error.response ? error.response.data : error.message);
+        alert('Error: ' + (error.response ? error.response.data.message : error.message));
+      });
   };
 
   return (
@@ -152,4 +155,3 @@ function AddPokemonPage() {
 }
 
 export default AddPokemonPage;
-
