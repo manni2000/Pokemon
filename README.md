@@ -26,6 +26,7 @@ The Pokemon Full-Stack Application allows users to interact with a database of P
 - **List Pokémon**: The main page displays a list of all Pokémon users in the database. Each entry shows the Pokémon owner's name, Pokémon name, and ability.
 - **Add Pokémon**: A form allows users to add new Pokémon to the database by entering the necessary details like owner name, Pokémon name, ability, initial position, speed, and direction.
 - **Edit Pokémon**: Users can update the details of existing Pokémon entries.
+- **Pokemon Detail**: Users can view specific pokemon details.
 - **Delete Pokémon**: Users can delete individual Pokémon entries or clear the entire list.
 
 
