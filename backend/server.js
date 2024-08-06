@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-  origin: 'https://pokemonapp-murex.vercel.app/' // Ensure this matches your frontend URL
+  origin: '*' // Ensure this matches your frontend URL
 }));
 app.use(bodyParser.json());
 
